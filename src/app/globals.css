@@ -2,20 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html.light {
+  background: white;
+  color: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html.dark {
+  background: black;
+  color: white;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+html.blue {
+  background-color: #3b82f6; /* Tailwind's blue-500 */
+  color: white;
+}
+
+html {
+  transition: background-color 1.2s ease, color 1.8s ease;
+}
+
+html, body {
+  overflow: hidden;
 }
