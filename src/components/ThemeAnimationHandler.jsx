@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 export default function ThemeAnimationHandler({
     children,
     duration = 1.2,
-    origin = '100% 100%', // Bottom-right default
+    origin = '100% 100%',
     colors = {
         light: '#ffffff',
         dark: '#000000',

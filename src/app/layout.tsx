@@ -26,13 +26,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <ThemeProvider attribute="class" themes={['light', 'dark', 'blue']}>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
           >
-          {children}
+            <ThemeProvider attribute="class" themes={['light', 'dark', 'blue']}>
+              {children}
+            </ThemeProvider>
         </body>
-      </ThemeProvider>
     </html>
   );
 }
