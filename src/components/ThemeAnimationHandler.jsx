@@ -32,7 +32,7 @@ export default function ThemeAnimationHandler({
                 style={{
                     backgroundColor: colors[theme],
                     position: 'absolute',
-                    inset: 1,
+                    inset: 0,
                     zIndex: -1,
                 }}
             />
